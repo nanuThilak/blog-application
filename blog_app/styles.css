@@ -10,14 +10,23 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-.signinForm {
+.nav-item a:hover {
+    color: gray !important;
+}
+.login_user {
+    cursor: pointer;
+}
+
+.signinForm,
+.signupForm {
     display: flex;
     flex-direction: column;
     gap: 10px;
 
 }
 
-.signinForm div {
+.signinForm div,
+.signupForm div {
     display: flex;
     flex-direction: column;
 }
@@ -42,8 +51,8 @@ body {
     padding: 0 12px;
     padding-block: 10px;
     display: flex;
+    justify-content: space-between;
     gap: 2rem;
-    min-width: 50vw;
     overflow: hidden;
     user-select: none;
 
@@ -74,7 +83,7 @@ body {
 
 @keyframes scroll {
     to {
-        transform: translate(calc(-100% - 2rem));
+        transform: translate(calc(-100%));
     }
 }
 
@@ -88,10 +97,10 @@ body {
 
 
 .blog {
-display: flex;
-align-items: center;
-justify-content: center;
-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
 }
 
 .footer_imgs {
@@ -102,4 +111,8 @@ height: 500px;
 
 .footer_imgs img {
     cursor: pointer;
+}
+
+.active_ele {
+    display: none;
 }
